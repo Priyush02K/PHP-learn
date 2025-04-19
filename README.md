@@ -22,7 +22,7 @@ This repo contains notes, code examples, and small projects as I explore the wor
 
 ## 🛠️ How to Run
 
-1. Clone the repo:
+1. Clone the repo: https://github.com/Priyush02K/PHP-learn.git
 
 
 2. Place the project inside your `htdocs` folder (if using XAMPP)
