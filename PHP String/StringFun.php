@@ -2,7 +2,7 @@
 
     $name="Priyush-Khobragade";
 
-    echo strlen("$name");
+    echo strlen ("$name");
 
     echo strrev("$name");
 
@@ -13,8 +13,6 @@
     echo trim($name ,"Pri");
 
     print_r(explode(" ", $name));
-
-
 
 
 
