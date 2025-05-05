@@ -11,8 +11,11 @@
     echo "<br/>";
   }
 
+
   echo "<br/>";
 
+
+  //for using
   for($i=0;$student<count($student);$i++){
     echo $student[$i];
     echo "<br/>";
