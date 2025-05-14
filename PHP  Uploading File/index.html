@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>File Upload Form</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .upload-container {
+            max-width: 500px;
+            background: #fff;
+            margin: 60px auto;
+            padding: 30px 40px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 10px;
+            display: block;
+            color: #555;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+            width: 100%;
+            padding: 8px;
+            font-size: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        p {
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        strong {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+
+<div class="upload-container">
+    <form action="file-upload-manager.php" method="post" enctype="multipart/form-data">
+        <h2>Upload File</h2>
+
+        <label for="fileSelect">Filename:</label>
+        <input type="file" name="photo" id="fileSelect" required>
+
+        <input type="submit" name="submit" value="Upload">
+
+        <p><strong>Note:</strong> Only .jpg, .jpeg, .png formats allowed to a max size of 2MB.</p>
+    </form>
+</div>
+
+</body>
+</html>
